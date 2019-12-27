@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1577472199 source:c:\users\sônia faria\desktop\jogo_da_velha\main.c
+	<stdio.h>
+	<stdlib.h>
+
