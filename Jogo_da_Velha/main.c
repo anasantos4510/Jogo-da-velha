@@ -1,4 +1,4 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <stdlib.h>
 
 #define RAND_MAX 100 //define o numero maximo para a faixa de numeros aleatorios
@@ -92,13 +92,13 @@ void game(struct JOGO *partida)
 
     do
     {
-        exibe_tabuleiro(partida->tabuleiro);
         movimento(tentativa);
         converter_coordenada(tentativa);
 
         if(grava_movimento(partida->tabuleiro, partida->vez, tentativa)==200)
         {//se o método retornarr 200 o movimento foi bem sucedido
             altera_vez(partida); //como o movimento foi feito, o outro jogador deve fazer o próximo movimento 
+	    exibe_tabuleiro(partida->tabuleiro);
             partida->resultado = exibe_resultado(partida->tabuleiro);//analisa o tabuleiro para obter o resultado atual
         }//se o movimento não for bem sucedido é solicitado que o mesmo jogador escolha outra posição para jogar
     }while(partida->resultado==' '); 
