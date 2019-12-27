@@ -97,8 +97,9 @@ void game(struct JOGO *partida)
 
         if(grava_movimento(partida->tabuleiro, partida->vez, tentativa)==200)
         {//se o método retornarr 200 o movimento foi bem sucedido
+            exibe_tabuleiro(partida->tabuleiro);
             altera_vez(partida); //como o movimento foi feito, o outro jogador deve fazer o próximo movimento 
-	    exibe_tabuleiro(partida->tabuleiro);
+	        
             partida->resultado = exibe_resultado(partida->tabuleiro);//analisa o tabuleiro para obter o resultado atual
         }//se o movimento não for bem sucedido é solicitado que o mesmo jogador escolha outra posição para jogar
     }while(partida->resultado==' '); 
@@ -260,8 +261,8 @@ char exibe_resultado(char tabuleiro[][3])
     char resultado = checa_tabulerio(tabuleiro);//verificar se houve ganhador
     if(resultado != ' ')
     {
-        printf("msg: Partida finalizada");
-        printf("winner: %c", resultado);
+        printf("msg: Partida finalizada\n");
+        printf("winner: %c\n", resultado);
         return resultado;
     }
     else//se não houve ganhador verifica se o tabuleiro está todo preenchido
