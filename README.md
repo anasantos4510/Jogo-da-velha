@@ -6,6 +6,8 @@ Teste para backend - DTI
 ## Descrição 
 O projeto oferece as funcionalidades essências do jogo da velha multiplayer, também há a preocupação de tratar inputs inesperados que poderiam causar anomalias.
 
+<img src="TelaVencedor.png">
+
 ## Informações de desenvolvimento 
 
 Linguagem: C
