@@ -1,6 +1,9 @@
 # Jogo da Velha Multiplayer
 Teste para backend - DTI
 
+<img src="Tela.png">
+
+
 ## Descrição 
 O projeto oferece as funcionalidades essências do jogo da velha multiplayer, também há a preocupação de tratar inputs inesperados que poderiam causar anomalias.
 
